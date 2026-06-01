@@ -1,0 +1,17 @@
+{
+  "name": "ts-webapi-without-frameworks-podcast-menager-main",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start:dev": "tsx --env-file=.env src/server.ts",
+    "start:watch": "tsx watch src/server.ts",
+    "dist": "tsup src/server.ts --format esm --out-dir dist",
+    "start:dist": "npm run dist && node dist/server.js"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.0",
+    "tsup": "^8.5.1",
+    "tsx": "^4.22.1",
+    "typescript": "^6.0.3"
+  }
+}
